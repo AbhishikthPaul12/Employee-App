@@ -1,0 +1,33 @@
+### Register Employee
+
+POST http://localhost:5000/employee-api/employees
+Content-Type: application/json
+
+{
+    "name":"Abhi",
+    "email":"abhi@mail.com",
+    "mobile":8050480504,
+    "designation":"TL",
+    "companyName":"ABCTech"
+}
+
+### Read all employees
+
+GET http://localhost:5000/employee-api/employees
+
+### Edit an employee
+
+PUT http://localhost:5000/employee-api/employees/69ca2983a1d8973b2e711a9b
+Content-Type: application/json
+
+{
+    "name":"Abhi",
+    "email":"abhi@mail.com",
+    "mobile": 8050480504,
+    "designation":"Manager",
+    "companyName":"ABCTech"
+}
+
+### Delete an employee
+
+DELETE http://localhost:5000/employee-api/employees/69ca2983a1d8973b2e711a9b
