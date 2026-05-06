@@ -1,0 +1,8 @@
+{
+  "name": "employee-app-fullstack",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm install --prefix Employee-Backend && npm install --prefix employee-frontend --legacy-peer-deps && npm run build --prefix employee-frontend",
+    "start": "cd Employee-Backend && npm start"
+  }
+}
