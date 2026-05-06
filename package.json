@@ -1,0 +1,13 @@
+{
+  "name": "employee-app-deployment",
+  "version": "1.0.0",
+  "description": "Deployment configuration for the fullstack employee application",
+  "scripts": {
+    "start": "cd Employee-Backend && npm start",
+    "install-backend": "cd Employee-Backend && npm install",
+    "install-frontend": "cd employee-frontend && npm install",
+    "build-frontend": "cd employee-frontend && npm install && npm run build",
+    "build": "npm run build-frontend",
+    "postinstall": "npm run install-backend"
+  }
+}
